@@ -1,63 +1,83 @@
-<<<<<<< HEAD
-# DALN_CNTT
-=======
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+# Travel Mate – Website đặt phòng du lịch trực tuyến tích hợp AI
+## Sinh viên thực hiện
+- Đồng Thị Ánh - 23013883
+- Bùi Thị Hồng Tươi - 23015124
+- Nguyễn Minh Phương - 23015738
+## Giới thiệu
 
-## About Laravel
+Travel Mate là hệ thống website đặt phòng du lịch trực tuyến tích hợp trí tuệ nhân tạo (AI), giúp kết nối khách hàng với các cơ sở lưu trú. Hệ thống hỗ trợ người dùng tìm kiếm khách sạn, xem thông tin phòng, đặt phòng và thanh toán trực tuyến.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Ngoài ra, hệ thống tích hợp AI Travel Mate nhằm hỗ trợ tư vấn du lịch, giải đáp thắc mắc và gợi ý phòng phù hợp với nhu cầu của khách hàng.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## Chức năng chính
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+### 1. Khách hàng (Customer)
+- Đăng ký, đăng nhập tài khoản.
+- Đăng nhập bằng Google.
+- Quản lý thông tin cá nhân.
+- Tìm kiếm và lọc khách sạn.
+- Xem thông tin khách sạn và chi tiết phòng.
+- Đặt phòng trực tuyến.
+- Thanh toán trực tuyến qua VNPAY.
+- Xem lịch sử đặt phòng.
+- Hủy đặt phòng và yêu cầu hoàn tiền.
+- Đánh giá và nhận xét khách sạn.
+- Gửi yêu cầu đăng ký đối tác.
+- Tư vấn du lịch bằng AI Chatbot.
+- Nhận gợi ý phòng phù hợp.
 
-## Learning Laravel
+### 2. Chủ khách sạn (Owner)
+- Quản lý thông tin khách sạn.
+- Quản lý loại phòng và phòng.
+- Quản lý đơn đặt phòng.
+- Xác nhận khách nhận phòng và trả phòng.
+- Quản lý tình trạng phòng.
+- Xử lý trường hợp khách không đến.
+- Theo dõi doanh thu.
+- Quản lý đánh giá của khách hàng.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+### 3. Quản trị viên (Admin)
+- Quản lý tài khoản người dùng.
+- Quản lý chủ khách sạn và đối tác.
+- Kiểm duyệt thông tin khách sạn.
+- Quản lý trạng thái khách sạn.
+- Quản lý yêu cầu hoàn tiền.
+- Đối soát thanh toán.
+- Quản lý đánh giá và khiếu nại.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## 🛠️ Công nghệ sử dụng
 
-## Laravel Sponsors
+| Thành phần | Công nghệ |
+|---|---|
+| Backend | PHP, Laravel |
+| Frontend | HTML, CSS, JavaScript |
+| Database | MySQL |
+| Công cụ phát triển | Visual Studio Code |
+| Quản lý cơ sở dữ liệu | phpMyAdmin |
+| Môi trường chạy | XAMPP |
+| Thanh toán | VNPAY Sandbox |
+| Đăng nhập | Google OAuth |
+| Bản đồ | OpenStreetMap |
+| Trí tuệ nhân tạo | OpenAI Responses API |
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+## Kiến trúc hệ thống
 
-### Premium Partners
+Hệ thống được xây dựng theo kiến trúc 3 lớp kết hợp mô hình MVC (Model – View – Controller), giúp phân chia rõ ràng giữa giao diện, xử lý nghiệp vụ và dữ liệu.
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+## Mục tiêu đề tài
 
-## Contributing
+- Xây dựng nền tảng đặt phòng trực tuyến thuận tiện.
+- Hỗ trợ khách hàng tìm kiếm và đặt phòng nhanh chóng.
+- Hỗ trợ chủ khách sạn quản lý hoạt động kinh doanh.
+- Hỗ trợ quản trị viên kiểm soát và vận hành hệ thống.
+- Ứng dụng AI vào tư vấn du lịch và gợi ý phòng.
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
 
-## Code of Conduct
+## Hướng phát triển
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
->>>>>>> d823e4e (Commit)
+- Hoàn thiện tích hợp thanh toán trong môi trường thực tế.
+- Nâng cao chất lượng tư vấn và gợi ý của AI.
+- Tối ưu hiệu năng và bảo mật hệ thống.
+- Triển khai hệ thống trên máy chủ thực tế.
+- Mở rộng khả năng quản lý và hỗ trợ nhiều cơ sở lưu trú.
